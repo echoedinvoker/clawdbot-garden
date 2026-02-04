@@ -46,7 +46,9 @@ Clawdbot 是開源的個人 AI 助理，被稱為「Siri 應該成為的樣子�
 - [[多模型路由可以大幅降低 AI 成本]] - Haiku/Sonnet/Opus 分層，預設用最便宜的
 - [[Context 管理的 Keep It Lean 原則]] - context 每一行都是對每次請求的永久加稅
 - [[AI 的自主問題解決能力]] - AI 的 resourcefulness 與風險（語音訊息事件、自我遷移）
+- [[AI Agent 的有用性與危險性悖論]] - 有用 ≡ 危險的根本架構矛盾
 - [[Command Audit Log 的重要性]] - 追蹤 Agent 執行了什麼
+- [[AI 硬體軍備競賽推高記憶體成本]] - DRAM 漲價與本地 AI 的結構性隱憂
 
 ### 人機互動
 
@@ -65,6 +67,7 @@ Clawdbot 是開源的個人 AI 助理，被稱為「Siri 應該成為的樣子�
 - [[YouTube - Open Source Friday with Clawdbot]] - **Peter Steinberger 訪談**（起源故事、AI 自主遷移事件）
 - [[YouTube - ClawdBot is the most powerful AI tool]] - Henry 案例（命名、Kanban、MiniMax $10/月）
 - [[I Cut My OpenClaw Costs by 97%]] - Token 優化實戰（多模型路由、Ollama 心跳、session 瘦身）
+- [[YouTube - Clawdbot to Moltbot to OpenClaw by Nate B Jones]] - 深度分析（安全漏洞、品牌危機、DRAM 經濟學、有用性悖論）
 
 ## 待探索
 

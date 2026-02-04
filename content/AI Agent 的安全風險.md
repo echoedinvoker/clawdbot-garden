@@ -38,14 +38,21 @@ aliases: [AI Agent Security Risks, Agent 安全考量]
 
 **實際案例**：2026 年 1 月有傳言稱掃描發現 900+ Clawdbot instances 暴露，但後來被澄清為**誤解**——那些是 MDNS responses，實際真正暴露的只有約 **12 個** instances。（見 YouTube - Clawdbot is a Security Nightmare by Low Level）
 
-儘管數字被誇大，但這仍提醒我們：**部署 AI Agent 時要注意認證設定**。
+**更深入的安全研究發現**（DVULN 紅隊公司、Slowmist、One Password）：
+
+- **Localhost 認證繞過**：Gateway 預設信任所有 localhost 連線，當部署在 reverse proxy 後方時，proxy 流量被視為本地連線，完全繞過 OAuth 認證
+- **Plugin 供應鏈攻擊**：研究者上傳良性 skill 到 Claude Hub（plugin marketplace），人為灌到 4,000 下載量，7 個國家的開發者立即安裝。**零審核機制**，所有下載的程式碼都被視為 trusted code
+- **5 分鐘概念驗證**：Matt Vukoule 透過一封含 prompt injection 的 email，5 分鐘內取得脆弱 Moltbot 實例的 private key 和完整控制權
+- **明文憑證風險**：Agent 以純文字儲存 API keys，info stealer 惡意軟體可在數秒內竊取
+
+這些不只是配置問題，更指向 Agent 架構的根本性矛盾——見 [[AI Agent 的有用性與危險性悖論]]。
 
 ### 5. Prompt Injection
 - LLM 無法區分「控制指令」和「使用者資料」
 - 每個資料來源（email、Discord、網頁）都是攻擊面
 - **這是 LLM 的根本性問題，目前無完美解決方案**
 
-詳見：Prompt Injection 攻擊
+詳見：[[Prompt Injection 攻擊]]
 
 ## 緩解策略
 
@@ -80,3 +87,4 @@ AI Agent 不像普通軟體——它能：
 - YouTube - Clawdbot Explained In 5 mins
 - YouTube - Clawdbot is a Security Nightmare by Low Level — 技術性安全分析
 - YouTube - Clawdbot Sucks Actually by Nick Saraev — 900+ exposed instances 案例
+- [[YouTube - Clawdbot to Moltbot to OpenClaw by Nate B Jones]] — DVULN 紅隊具體漏洞發現

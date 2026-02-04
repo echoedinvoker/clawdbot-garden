@@ -34,6 +34,16 @@ aliases: [Local vs Cloud Agent, Agent 部署決策, 隔離環境運行 AI Agent]
 
 ---
 
+## 超大規模服務商依賴悖論
+
+「本地運行 = 自主」是一個過度簡化的敘事。即使使用本地 Agent（如 Moltbot），大多數實例仍然路由到 Claude API——**你擁有 agent 層，但你租用智能**。
+
+逃生艙是本地模型（如 Ollama），但本地模型需要 RAM，而 DRAM 價格正因 AI 軍備競賽飆漲（見 [[AI 硬體軍備競賽推高記憶體成本]]）。自主權的追求最終回到了對超大規模服務商的依賴。
+
+Mac mini 搶購潮的另一層含義：開發者在硬體成本尚可承受時鎖定本地算力——這是對未來本地 AI 被定價排擠的風險對沖。
+
+---
+
 ## 隔離環境策略
 
 本地 AI Agent 有完整的系統權限，可能造成意外損害（見 [[AI Agent 的安全風險]]）。隔離環境可以：
@@ -76,3 +86,4 @@ aliases: [Local vs Cloud Agent, Agent 部署決策, 隔離環境運行 AI Agent]
 - [[YouTube - Intro to Clawdbot by Kevin Kerns]]
 - [[YouTube - Clawdbot 48小時使用心得]]
 - YouTube - Clawdbot Explained In 5 mins
+- [[YouTube - Clawdbot to Moltbot to OpenClaw by Nate B Jones]] — 超大規模服務商依賴悖論
