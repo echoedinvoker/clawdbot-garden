@@ -21,5 +21,22 @@ for note in "${PERMANENT_NOTES[@]}"; do
   [ -f "$src" ] && cp "$src" "$CONTENT/$note.md"
 done
 
-echo "Synced: index + ${#PERMANENT_NOTES[@]} permanent notes"
-ls -la "$CONTENT/"
+# --- Strip broken wikilinks ---
+VALID_TARGETS=()
+for f in "$CONTENT"/*.md; do
+  name="$(basename "$f" .md)"
+  VALID_TARGETS+=("$name")
+done
+
+for f in "$CONTENT"/*.md; do
+  perl -pi -e '
+    my @valid = split /\n/, q{'"$(printf '%s\n' "${VALID_TARGETS[@]}")"'};
+    my %ok = map { $_ => 1 } @valid;
+    # [[target|alias]] form
+    s/\[\[([^\]|]+)\|([^\]]+)\]\]/exists $ok{$1} ? "[[$1|$2]]" : "$2"/ge;
+    # [[target]] form (no alias)
+    s/\[\[([^\]|]+)\]\]/exists $ok{$1} ? "[[$1]]" : "$1"/ge;
+  ' "$f"
+done
+
+echo "Synced and cleaned: $(ls "$CONTENT"/*.md | wc -l) files"
