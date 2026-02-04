@@ -77,6 +77,14 @@ LLM output: Haha pwned!!
 - Slack bot — 惡意訊息可以注入指令
 - 網頁爬蟲 — 惡意網頁可以注入指令
 
+## 模型大小與抵抗力
+
+**大模型顯著優於小模型**。VelvetShark 明確指出：
+
+> "Don't use small models for this. Opus is very good at resisting prompt injection. Haiku or other smaller models, not so much."
+
+這意味著在安全敏感的任務（email triage、外部資料處理）中，應使用較大的模型，即使成本更高。這與 [[AI Agent 的成本優化策略]] 中的多模型路由策略形成取捨：**省錢用小模型，但安全用大模型**。
+
 ## 緩解策略
 
 目前沒有完美解決方案，但可以降低風險：
@@ -86,6 +94,7 @@ LLM output: Haha pwned!!
 3. **人工確認** — 敏感操作需要使用者批准
 4. **輸入驗證** — 對已知危險模式做過濾（但攻擊者會繞過）
 5. **分層架構** — 敏感 API 不直接暴露給 LLM
+6. **使用大模型** — 安全敏感任務避免使用小模型
 
 ---
 
@@ -98,4 +107,5 @@ LLM output: Haha pwned!!
 ## 參考
 
 - YouTube - Clawdbot is a Security Nightmare by Low Level
+- [[YouTube - OpenClaw use cases by VelvetShark]] — 模型大小與抵抗力
 - IBM: "How prompt injection attacks work"

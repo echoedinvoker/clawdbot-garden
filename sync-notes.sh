@@ -35,6 +35,8 @@ PERMANENT_NOTES=(
   "AI 硬體軍備競賽推高記憶體成本"
   "為 AI 命名的心理效果"
   "Node.js fetch IPv6 連線問題排查"
+  "QMD 本地語義搜尋工具"
+  "Multi-Agent Orchestrator 模式"
 )
 for note in "${PERMANENT_NOTES[@]}"; do
   src="$ZETTEL/3-permanent/$note.md"
@@ -50,6 +52,7 @@ LIT_NOTES=(
   "YouTube - ClawdBot is the most powerful AI tool"
   "I Cut My OpenClaw Costs by 97%"
   "YouTube - Clawdbot to Moltbot to OpenClaw by Nate B Jones"
+  "YouTube - OpenClaw use cases by VelvetShark"
 )
 for note in "${LIT_NOTES[@]}"; do
   src="$ZETTEL/2-literature/$note.md"

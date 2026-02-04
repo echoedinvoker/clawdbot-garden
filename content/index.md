@@ -18,6 +18,8 @@ Clawdbot 是開源的個人 AI 助理，被稱為「Siri 應該成為的樣子�
 - [[通訊平台作為 AI Agent 介面]] - 透過 iMessage/Discord/WhatsApp 控制 Agent
 - [[Agent Skills 模式]] - 模組化能力擴展的設計
 - [[AI Agent 的記憶系統設計]] - 跨對話記憶與主動式 AI 的概念
+- [[QMD 本地語義搜尋工具]] - 三層搜尋解決筆記檢索瓶頸
+- [[Multi-Agent Orchestrator 模式]] - 多 Agent 分工協作架構
 - [[開源 AI Agent 的優勢]] - 隱私、控制權、可審計性
 
 ## 主題分類
@@ -31,6 +33,8 @@ Clawdbot 是開源的個人 AI 助理，被稱為「Siri 應該成為的樣子�
 - [[Clawdbot 設定指南]] - 常用指令、TTS 語音、Telegram 配對
 - [[Session Cookie 在 Web 自動化的角色]] - 讓 Agent 保持登入狀態的關鍵
 - Gemini API 免費圖片生成設定 - Nano Banana Pro skill 安裝與 Free tier 配額
+
+> **免費模型替代方案**：Minimax 2.1（OAuth 登入，7 天免費）和 Kimi K2.5（透過 Ollama cloud model 免費運行，擅長 coding）可作為低成本或零成本的模型選項。可設定 Minimax 為預設模型、Kimi K2.5 為 coding sub-agent，token 耗盡時互相切換。
 
 ### 自動化與主動式 AI
 
@@ -68,6 +72,7 @@ Clawdbot 是開源的個人 AI 助理，被稱為「Siri 應該成為的樣子�
 - [[YouTube - ClawdBot is the most powerful AI tool]] - Henry 案例（命名、Kanban、MiniMax $10/月）
 - [[I Cut My OpenClaw Costs by 97%]] - Token 優化實戰（多模型路由、Ollama 心跳、session 瘦身）
 - [[YouTube - Clawdbot to Moltbot to OpenClaw by Nate B Jones]] - 深度分析（安全漏洞、品牌危機、DRAM 經濟學、有用性悖論）
+- [[YouTube - OpenClaw use cases by VelvetShark]] - 9 個實際自動化案例 + 安全防護 + QMD + Multi-Agent
 
 ## 待探索
 

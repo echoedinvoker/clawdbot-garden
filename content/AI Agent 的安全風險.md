@@ -58,9 +58,11 @@ aliases: [AI Agent Security Risks, Agent 安全考量]
 
 1. **隔離環境** — 使用獨立的機器或 VM（見 本地運行 vs 雲端運行 AI Agent#隔離環境策略）
 2. **最小權限原則** — 只給予必要的存取權限
-3. **監控** — 定期檢查 AI 的行為記錄（見 [[Command Audit Log 的重要性]]）
-4. **獨立帳號** — 給 AI 專用的 email 和社交帳號
-5. **Sandbox 啟動** — 新工具先在 sandbox 環境測試
+3. **Draft-only 模式** — 對外通訊（email、訊息）只允許草擬，不允許直接發送。Agent 傾向「有效」而非「得體」，人類做最終決定。這是行為層面的最小權限
+4. **監控** — 定期檢查 AI 的行為記錄（見 [[Command Audit Log 的重要性]]）
+5. **獨立帳號** — 給 AI 專用的 email 和社交帳號；有人用雙手機方案（私人手機 + bot 專用手機）
+6. **Sandbox 啟動** — 新工具先在 sandbox 環境測試
+7. **使用大模型處理安全敏感任務** — 大模型對 prompt injection 的抵抗力遠優於小模型（見 Prompt Injection 攻擊#模型大小與抵抗力）
 
 ## 為什麼這很重要
 
@@ -88,3 +90,4 @@ AI Agent 不像普通軟體——它能：
 - YouTube - Clawdbot is a Security Nightmare by Low Level — 技術性安全分析
 - YouTube - Clawdbot Sucks Actually by Nick Saraev — 900+ exposed instances 案例
 - [[YouTube - Clawdbot to Moltbot to OpenClaw by Nate B Jones]] — DVULN 紅隊具體漏洞發現
+- [[YouTube - OpenClaw use cases by VelvetShark]] — Draft-only 模式、三層防護架構
