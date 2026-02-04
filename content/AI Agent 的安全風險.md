@@ -51,7 +51,7 @@ aliases: [AI Agent Security Risks, Agent 安全考量]
 
 1. **隔離環境** — 使用獨立的機器或 VM（見 本地運行 vs 雲端運行 AI Agent#隔離環境策略）
 2. **最小權限原則** — 只給予必要的存取權限
-3. **監控** — 定期檢查 AI 的行為記錄（見 Command Audit Log 的重要性）
+3. **監控** — 定期檢查 AI 的行為記錄（見 [[Command Audit Log 的重要性]]）
 4. **獨立帳號** — 給 AI 專用的 email 和社交帳號
 5. **Sandbox 啟動** — 新工具先在 sandbox 環境測試
 
@@ -63,17 +63,17 @@ AI Agent 不像普通軟體——它能：
 - 以你的名義發送郵件
 - 控制你的智慧家居
 
-這種深度存取下，信任成本極高。開源讓信任可驗證（見 開源 AI Agent 的優勢）。
+這種深度存取下，信任成本極高。開源讓信任可驗證（見 [[開源 AI Agent 的優勢]]）。
 
 ---
 
 ## 連結
 
 - 上層：Clawdbot MOC
-- 相關：[[Clawdbot]]、本地運行 vs 雲端運行 AI Agent
-- 成本：AI 工具的成本考量
-- 審計：Command Audit Log 的重要性
-- 信任：開源 AI Agent 的優勢
+- 相關：[[Clawdbot]]、[[本地運行 vs 雲端運行 AI Agent]]
+- 成本：[[AI 工具的成本考量]]
+- 審計：[[Command Audit Log 的重要性]]
+- 信任：[[開源 AI Agent 的優勢]]
 
 ## 參考
 

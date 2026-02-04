@@ -48,7 +48,7 @@ AI Agent 的記憶系統讓它能夠**跨對話保留資訊**，從「每次都�
 
 ### 實現機制
 
-- **Cron Jobs / Heartbeats** — 定時喚醒 AI 檢查（見 Heartbeat 機制讓 Agent 保持待命）
+- **Cron Jobs / Heartbeats** — 定時喚醒 AI 檢查（見 [[Heartbeat 機制讓 Agent 保持待命]]）
 - **記憶系統** — 儲存和回憶用戶偏好
 - **事件驅動** — 監聽特定事件並響應
 
@@ -56,7 +56,7 @@ AI Agent 的記憶系統讓它能夠**跨對話保留資訊**，從「每次都�
 
 ## 注意事項
 
-- 主動式 AI 會**持續消耗 tokens**（見 AI 工具的成本考量）
+- 主動式 AI 會**持續消耗 tokens**（見 [[AI 工具的成本考量]]）
 - 可能會做出**意外的行為**（見 [[AI Agent 的安全風險]]）
 - 需要明確設定邊界和權限
 
@@ -76,13 +76,13 @@ AI Agent 的記憶系統讓它能夠**跨對話保留資訊**，從「每次都�
 ## 連結
 
 - 上層：Clawdbot MOC
-- 相關：Heartbeat 機制讓 Agent 保持待命、AI Morning Brief 模式
-- 風險：[[AI Agent 的安全風險]]、AI 工具的成本考量
+- 相關：[[Heartbeat 機制讓 Agent 保持待命]]、[[AI Morning Brief 模式]]
+- 風險：[[AI Agent 的安全風險]]、[[AI 工具的成本考量]]
 - 對比：RAG 檢索增強生成 — 技術層面的記憶實現方式
 
 ## 參考
 
-- YouTube - Clawdbot 48小時使用心得 — Newsletter 主動撰寫案例
+- [[YouTube - Clawdbot 48小時使用心得]] — Newsletter 主動撰寫案例
 - YouTube - Clawdbot Explained In 5 mins — 主動式 AI 的風險與優勢
-- YouTube - I Played with Clawdbot all Weekend — Memory 檔案展示、記憶壓縮問題
+- [[YouTube - I Played with Clawdbot all Weekend]] — Memory 檔案展示、記憶壓縮問題
 - Clawdbot 的記憶檔案：`MEMORY.md` + `memory/*.md`

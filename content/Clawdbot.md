@@ -16,7 +16,7 @@ Clawdbot（拼法：C-L-A-W-D-bot）是一個開源的個人 AI 助理，可在�
 **Clawdbot 不是 Claude Code！**
 - Clawdbot 是獨立的開源專案
 - 可以使用 Claude Code 作為底層，也可以用 Gemini、ChatGPT 等
-- 兩者的差異見 Clawdbot 與 Claude Code 的差異
+- 兩者的差異見 [[Clawdbot 與 Claude Code 的差異]]
 
 ```
 Claude (LLM)
@@ -68,15 +68,15 @@ clawdbot onboard --install-daemon
 
 ## 使用前須知
 
-1. **成本可能很高** — 見 AI 工具的成本考量
+1. **成本可能很高** — 見 [[AI 工具的成本考量]]
 2. **安全風險** — 見 [[AI Agent 的安全風險]]
 3. **建議隔離環境** — 見 本地運行 vs 雲端運行 AI Agent#隔離環境策略
 
 ## 連結
 
 - 上層：Clawdbot MOC
-- 相關：Clawdbot 與 Claude Code 的差異、Clawdbot 設定指南
-- 風險：[[AI Agent 的安全風險]]、AI 工具的成本考量
+- 相關：[[Clawdbot 與 Claude Code 的差異]]、[[Clawdbot 設定指南]]
+- 風險：[[AI Agent 的安全風險]]、[[AI 工具的成本考量]]
 
 ## 參考
 
